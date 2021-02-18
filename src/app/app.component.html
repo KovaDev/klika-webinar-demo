@@ -1,0 +1,21 @@
+<div class="container-fluid">
+  <nav class="main-navbar navbar navbar-expand-lg navbar-light bg-dark mb-3">
+    <a class="navbar-brand text-white" routerLink="/">Klika Webinar Demo</a>
+    <div class="collapse navbar-collapse justify-content-between">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link text-white" routerLink="/movies" (mouseover)="preloadRoute('movies')">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" routerLink="/actors" (mouseover)="preloadRoute('actors')">Actors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" routerLink="/notes">Notes</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
