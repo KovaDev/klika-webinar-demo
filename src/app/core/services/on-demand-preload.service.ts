@@ -1,9 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, Subject } from 'rxjs';
-
-export class OnDemandPreloadingOptions {
-  constructor(routePath: string, preload: true) {};
-}
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
